@@ -3,7 +3,10 @@ export interface IAddProducts {
   name:string,
   amount:string
 }
-export interface IGetProducts extends IAddProducts{
+export interface IGetProducts {
+  id: number,
+  name:string,
+  amount:string,
   orderId: number | null,
 }
 
