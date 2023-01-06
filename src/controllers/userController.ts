@@ -7,10 +7,6 @@ const userController = {
     const { code, data } = await userService.addUser(username, vocation, level, password);
     return res.status(code).json(data);
   },
-  // async listProducts(_req:Request, res:Response) {
-  //   const { code, data } = await userService.listProducts();
-  //   return res.status(code).json(data);
-  // },
 };
 
 export default userController;

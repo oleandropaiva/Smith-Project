@@ -1,6 +1,4 @@
-import { 
-  // ResultSetHeader,
-  RowDataPacket } from 'mysql2';
+import { RowDataPacket } from 'mysql2';
 import connection from './connection';
 import { IGetOrders } from '../interface/interface';
 
