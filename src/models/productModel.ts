@@ -9,7 +9,7 @@ const productModel = {
     return { id: result.insertId, name, amount };
   },
   async listProducts(): Promise<IGetProducts[]> {
-    const sql = 'SELECT id, name, amount, orderId FROM Trybesmith.products';
+    const sql = 'SELECT id, name, amount, order_id FROM Trybesmith.products';
     const [result] = await connection.execute<RowDataPacket[]>(sql);
     return result as IGetProducts[];
   },
