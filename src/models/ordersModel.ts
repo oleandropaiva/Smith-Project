@@ -9,7 +9,7 @@ const TABLE_ORDERS = 'Trybesmith.orders';
 
 const ordersModel = {
   async listOrders(): Promise<IGetOrders[]> {
-    const sql = `SELECT o.id, o.user_id, JSON_ARRAYAGG(p.id) AS productsIds
+    const sql = `SELECT o.id, o.user_id AS userId, JSON_ARRAYAGG(p.id) AS productsIds
     FROM ${TABLE_ORDERS} AS o
     INNER JOIN ${TABLE_PRODUCTS} AS p
     ON o.id = p.order_id
