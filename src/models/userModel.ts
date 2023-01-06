@@ -3,7 +3,7 @@ import { ResultSetHeader,
 } from 'mysql2';
 import connection from './connection';
 
-const TABLE_USER = 'Trybesmith.products';
+const TABLE_USER = 'Trybesmith.users';
 
 const userModel = {
   async addUser(username:string, vocation:string, level:number, password:string) {
