@@ -1,5 +1,5 @@
 export interface IAddProducts {
-  id: number,
+  id?: number,
   name:string,
   amount:string
 }
