@@ -10,9 +10,8 @@ export interface IGetProducts {
   orderId: number | null,
 }
 
-// {
-//   "id": 1,
-//   "name": "Poção de cura",
-//   "amount": "20 gold",
-//   "orderId": null
-// },
+export interface IGetOrders {
+  id: number,
+  userId: number,
+  productsIds: number[],
+}
