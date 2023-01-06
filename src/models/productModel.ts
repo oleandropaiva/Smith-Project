@@ -1,7 +1,7 @@
 import { ResultSetHeader,
   // RowDataPacket
 } from 'mysql2';
-import connection from './conection';
+import connection from './connection';
 import { IAddProducts } from '../interface/interface';
 
 const productModel = {
